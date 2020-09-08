@@ -9,19 +9,29 @@
 /* Begin PBXBuildFile section */
 		FA3C6A3D2507E9140058B9E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A3C2507E9140058B9E5 /* AppDelegate.swift */; };
 		FA3C6A3F2507E9140058B9E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A3E2507E9140058B9E5 /* SceneDelegate.swift */; };
-		FA3C6A442507E9140058B9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C6A422507E9140058B9E5 /* Main.storyboard */; };
 		FA3C6A462507E9150058B9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3C6A452507E9150058B9E5 /* Assets.xcassets */; };
 		FA3C6A492507E9150058B9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C6A472507E9150058B9E5 /* LaunchScreen.storyboard */; };
+		FA3C6A582507F1F00058B9E5 /*  Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A572507F1F00058B9E5 /*  Car.swift */; };
+		FA3C6A5A2507F1FA0058B9E5 /* CarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A592507F1FA0058B9E5 /* CarController.swift */; };
+		FA3C6A5C2507F20F0058B9E5 /* CarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A5B2507F20F0058B9E5 /* CarTableViewController.swift */; };
+		FA3C6A5E2507F2200058B9E5 /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A5D2507F21F0058B9E5 /* CarDetailViewController.swift */; };
+		FA3C6A602507F2370058B9E5 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C6A5F2507F2370058B9E5 /* CarTableViewCell.swift */; };
+		FA3C6A632507FACF0058B9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3C6A622507FACF0058B9E5 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA3C6A392507E9140058B9E5 /* KnowYourCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3C6A3C2507E9140058B9E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3C6A3E2507E9140058B9E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA3C6A432507E9140058B9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA3C6A452507E9150058B9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3C6A482507E9150058B9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3C6A4A2507E9150058B9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3C6A572507F1F00058B9E5 /*  Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Car.swift"; sourceTree = "<group>"; };
+		FA3C6A592507F1FA0058B9E5 /* CarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarController.swift; sourceTree = "<group>"; };
+		FA3C6A5B2507F20F0058B9E5 /* CarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewController.swift; sourceTree = "<group>"; };
+		FA3C6A5D2507F21F0058B9E5 /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
+		FA3C6A5F2507F2370058B9E5 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		FA3C6A622507FACF0058B9E5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,10 @@
 		FA3C6A3B2507E9140058B9E5 /* KnowYourCar */ = {
 			isa = PBXGroup;
 			children = (
+				FA3C6A612507F23D0058B9E5 /* Helpers */,
+				FA3C6A542507F1CB0058B9E5 /* Views */,
+				FA3C6A532507F1BF0058B9E5 /* Controllers */,
+				FA3C6A522507F1BA0058B9E5 /* Models */,
 				FA3C6A502507E99C0058B9E5 /* Resources */,
 				FA3C6A512507E9A70058B9E5 /* Storyboards */,
 			);
@@ -74,10 +88,59 @@
 		FA3C6A512507E9A70058B9E5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				FA3C6A422507E9140058B9E5 /* Main.storyboard */,
 				FA3C6A472507E9150058B9E5 /* LaunchScreen.storyboard */,
+				FA3C6A622507FACF0058B9E5 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA3C6A522507F1BA0058B9E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C6A572507F1F00058B9E5 /*  Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA3C6A532507F1BF0058B9E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C6A562507F1D90058B9E5 /* Model Controllers */,
+				FA3C6A552507F1D10058B9E5 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA3C6A542507F1CB0058B9E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C6A5F2507F2370058B9E5 /* CarTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA3C6A552507F1D10058B9E5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C6A5B2507F20F0058B9E5 /* CarTableViewController.swift */,
+				FA3C6A5D2507F21F0058B9E5 /* CarDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FA3C6A562507F1D90058B9E5 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA3C6A592507F1FA0058B9E5 /* CarController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		FA3C6A612507F23D0058B9E5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +200,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3C6A632507FACF0058B9E5 /* Main.storyboard in Resources */,
 				FA3C6A492507E9150058B9E5 /* LaunchScreen.storyboard in Resources */,
 				FA3C6A462507E9150058B9E5 /* Assets.xcassets in Resources */,
-				FA3C6A442507E9140058B9E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,22 +213,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3C6A5A2507F1FA0058B9E5 /* CarController.swift in Sources */,
+				FA3C6A602507F2370058B9E5 /* CarTableViewCell.swift in Sources */,
 				FA3C6A3D2507E9140058B9E5 /* AppDelegate.swift in Sources */,
+				FA3C6A5E2507F2200058B9E5 /* CarDetailViewController.swift in Sources */,
+				FA3C6A5C2507F20F0058B9E5 /* CarTableViewController.swift in Sources */,
 				FA3C6A3F2507E9140058B9E5 /* SceneDelegate.swift in Sources */,
+				FA3C6A582507F1F00058B9E5 /*  Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA3C6A422507E9140058B9E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA3C6A432507E9140058B9E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA3C6A472507E9150058B9E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -228,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -283,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
