@@ -22,7 +22,7 @@ class CarTableViewCell: UITableViewCell {
 
 	func setUpCell(){
 		guard let car = car else { return }
-		carImage.image = UIImage(named: "carTwo")
+		carImage.image = UIImage(named: car.carImage)
 		nameLabel.text = car.name
 
 	}
